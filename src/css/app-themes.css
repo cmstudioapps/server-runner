@@ -1,0 +1,247 @@
+/* =============================================
+   Temas de cor da aplicação
+   Controlado via data-app-theme no <html>
+   ============================================= */
+
+/* Padrão: Neon Cyan (atual) */
+html[data-app-theme="cyber"] {
+  --accent: #5EF2FF;
+  --accent-glow: rgba(94, 242, 255, 0.25);
+  --accent-dim: rgba(94, 242, 255, 0.08);
+  --green: #3DFF9C;
+  --green-glow: rgba(61, 255, 156, 0.2);
+}
+
+html[data-app-theme="hacker"] {
+  --accent: #3DFF9C;
+  --accent-glow: rgba(61, 255, 156, 0.25);
+  --accent-dim: rgba(61, 255, 156, 0.08);
+  --green: #3DFF9C;
+  --green-glow: rgba(61, 255, 156, 0.2);
+}
+
+html[data-app-theme="sunset"] {
+  --accent: #FF86B5;
+  --accent-glow: rgba(255, 134, 181, 0.25);
+  --accent-dim: rgba(255, 134, 181, 0.08);
+  --green: #FFBD2E;
+  --green-glow: rgba(255, 189, 46, 0.2);
+}
+
+html[data-app-theme="ocean"] {
+  --accent: #4FAEFF;
+  --accent-glow: rgba(79, 174, 255, 0.25);
+  --accent-dim: rgba(79, 174, 255, 0.08);
+  --green: #34D399;
+  --green-glow: rgba(52, 211, 153, 0.2);
+}
+
+html[data-app-theme="dracula"] {
+  --accent: #A78BFA;
+  --accent-glow: rgba(167, 139, 250, 0.25);
+  --accent-dim: rgba(167, 139, 250, 0.08);
+  --green: #50FA7B;
+  --green-glow: rgba(80, 250, 123, 0.2);
+}
+
+html[data-app-theme="amber"] {
+  --accent: #FFBD2E;
+  --accent-glow: rgba(255, 189, 46, 0.25);
+  --accent-dim: rgba(255, 189, 46, 0.08);
+  --green: #FFBD2E;
+  --green-glow: rgba(255, 189, 46, 0.2);
+}
+
+html[data-app-theme="nord"] {
+  --accent: #88C0D0;
+  --accent-glow: rgba(136, 192, 208, 0.25);
+  --accent-dim: rgba(136, 192, 208, 0.08);
+  --green: #A3BE8C;
+  --green-glow: rgba(163, 190, 140, 0.2);
+}
+
+/* =============================================
+   Fundos da janela (background effects)
+   ============================================= */
+
+/* Sólido escuro (padrão) */
+html[data-bg-style="solid"] .app-container::before {
+  display: none;
+}
+
+/* Vidro (Glass) */
+html[data-bg-style="glass"] .titlebar,
+html[data-bg-style="glass"] .sidebar,
+html[data-bg-style="glass"] .main-content,
+html[data-bg-style="glass"] .server-card,
+html[data-bg-style="glass"] .settings-card,
+html[data-bg-style="glass"] .logs-container,
+html[data-bg-style="glass"] .about-card,
+html[data-bg-style="glass"] .modal,
+html[data-bg-style="glass"] .start-mode-dialog,
+html[data-bg-style="glass"] .start-mode-option,
+html[data-bg-style="glass"] .search-input,
+html[data-bg-style="glass"] .menu-item,
+html[data-bg-style="glass"] .system-panel,
+html[data-bg-style="glass"] .titlebar-opt,
+html[data-bg-style="glass"] .form-select,
+html[data-bg-style="glass"] .form-input,
+html[data-bg-style="glass"] .btn-primary,
+html[data-bg-style="glass"] .btn-secondary,
+html[data-bg-style="glass"] .action-btn,
+html[data-bg-style="glass"] .about-link {
+  background: rgba(23, 26, 29, 0.58) !important;
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+}
+
+html[data-bg-style="glass"] .server-card,
+html[data-bg-style="glass"] .settings-card,
+html[data-bg-style="glass"] .logs-container,
+html[data-bg-style="glass"] .about-card,
+html[data-bg-style="glass"] .modal,
+html[data-bg-style="glass"] .start-mode-dialog,
+html[data-bg-style="glass"] .start-mode-option,
+html[data-bg-style="glass"] .system-panel,
+html[data-bg-style="glass"] .menu-item,
+html[data-bg-style="glass"] .titlebar-opt,
+html[data-bg-style="glass"] .form-select,
+html[data-bg-style="glass"] .form-input,
+html[data-bg-style="glass"] .btn-primary,
+html[data-bg-style="glass"] .btn-secondary,
+html[data-bg-style="glass"] .action-btn,
+html[data-bg-style="glass"] .about-link {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-bg-style="glass"] .header-title {
+  text-shadow: none;
+}
+
+/* Acrílico */
+html[data-bg-style="acrylic"] .titlebar,
+html[data-bg-style="acrylic"] .sidebar,
+html[data-bg-style="acrylic"] .main-content,
+html[data-bg-style="acrylic"] .server-card,
+html[data-bg-style="acrylic"] .settings-card,
+html[data-bg-style="acrylic"] .logs-container,
+html[data-bg-style="acrylic"] .about-card,
+html[data-bg-style="acrylic"] .modal,
+html[data-bg-style="acrylic"] .start-mode-dialog,
+html[data-bg-style="acrylic"] .start-mode-option,
+html[data-bg-style="acrylic"] .search-input,
+html[data-bg-style="acrylic"] .menu-item,
+html[data-bg-style="acrylic"] .system-panel,
+html[data-bg-style="acrylic"] .titlebar-opt,
+html[data-bg-style="acrylic"] .form-select,
+html[data-bg-style="acrylic"] .form-input,
+html[data-bg-style="acrylic"] .btn-primary,
+html[data-bg-style="acrylic"] .btn-secondary,
+html[data-bg-style="acrylic"] .action-btn,
+html[data-bg-style="acrylic"] .about-link {
+  background: rgba(15, 18, 22, 0.42) !important;
+  backdrop-filter: blur(30px) saturate(1.35);
+  -webkit-backdrop-filter: blur(30px) saturate(1.35);
+}
+
+html[data-bg-style="acrylic"] .server-card,
+html[data-bg-style="acrylic"] .settings-card,
+html[data-bg-style="acrylic"] .logs-container,
+html[data-bg-style="acrylic"] .about-card,
+html[data-bg-style="acrylic"] .modal,
+html[data-bg-style="acrylic"] .start-mode-dialog,
+html[data-bg-style="acrylic"] .start-mode-option,
+html[data-bg-style="acrylic"] .system-panel,
+html[data-bg-style="acrylic"] .menu-item,
+html[data-bg-style="acrylic"] .titlebar-opt,
+html[data-bg-style="acrylic"] .form-select,
+html[data-bg-style="acrylic"] .form-input,
+html[data-bg-style="acrylic"] .btn-primary,
+html[data-bg-style="acrylic"] .btn-secondary,
+html[data-bg-style="acrylic"] .action-btn,
+html[data-bg-style="acrylic"] .about-link {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+html[data-bg-style="acrylic"] .header-title {
+  text-shadow: none;
+}
+
+/* Transparente puro */
+html[data-bg-style="transparent"] .titlebar,
+html[data-bg-style="transparent"] .sidebar,
+html[data-bg-style="transparent"] .main-content,
+html[data-bg-style="transparent"] .server-card,
+html[data-bg-style="transparent"] .settings-card,
+html[data-bg-style="transparent"] .logs-container,
+html[data-bg-style="transparent"] .about-card,
+html[data-bg-style="transparent"] .modal,
+html[data-bg-style="transparent"] .start-mode-dialog,
+html[data-bg-style="transparent"] .start-mode-option,
+html[data-bg-style="transparent"] .search-input,
+html[data-bg-style="transparent"] .menu-item,
+html[data-bg-style="transparent"] .system-panel,
+html[data-bg-style="transparent"] .titlebar-opt,
+html[data-bg-style="transparent"] .form-select,
+html[data-bg-style="transparent"] .form-input,
+html[data-bg-style="transparent"] .btn-primary,
+html[data-bg-style="transparent"] .btn-secondary,
+html[data-bg-style="transparent"] .action-btn,
+html[data-bg-style="transparent"] .about-link {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+html[data-bg-style="transparent"] .server-card,
+html[data-bg-style="transparent"] .settings-card,
+html[data-bg-style="transparent"] .logs-container,
+html[data-bg-style="transparent"] .about-card,
+html[data-bg-style="transparent"] .modal,
+html[data-bg-style="transparent"] .start-mode-dialog,
+html[data-bg-style="transparent"] .start-mode-option,
+html[data-bg-style="transparent"] .system-panel,
+html[data-bg-style="transparent"] .menu-item,
+html[data-bg-style="transparent"] .titlebar-opt,
+html[data-bg-style="transparent"] .form-select,
+html[data-bg-style="transparent"] .form-input,
+html[data-bg-style="transparent"] .btn-primary,
+html[data-bg-style="transparent"] .btn-secondary,
+html[data-bg-style="transparent"] .action-btn,
+html[data-bg-style="transparent"] .about-link {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-bg-style="transparent"] .server-card,
+html[data-bg-style="transparent"] .settings-card {
+  background: rgba(35, 39, 43, 0.5);
+}
+
+/* Background image/video layer */
+.bg-media-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-media-layer img,
+.bg-media-layer video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: var(--bg-media-opacity, 0.3);
+  filter: brightness(var(--bg-media-brightness, 0.5));
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+/* Tema escuro permanece */
+[data-bg-style] .main-content,
+[data-bg-style] .sidebar,
+[data-bg-style] .server-card,
+[data-bg-style] .settings-card {
+  transition: background 0.5s ease, backdrop-filter 0.5s ease;
+}

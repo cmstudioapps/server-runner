@@ -1,0 +1,190 @@
+const LANG_PT_BR = {
+  // App
+  app: { title: 'ServerRunner' },
+
+  // Sidebar
+  sidebar: {
+    dashboard: 'Dashboard',
+    settings: 'Configurações',
+    logs: 'Logs',
+    system: 'ServerRunner',
+    cpu: 'CPU',
+    ram: 'RAM',
+    about: 'Sobre',
+    ramSystem: '💻 RAM do Sistema',
+  },
+
+  // Header
+  header: {
+    searchPlaceholder: 'Buscar servidores...',
+    importBtn: 'Import New Server',
+  },
+
+  // Dashboard
+  dashboard: {
+    emptyTitle: 'Nenhum servidor importado',
+    emptyDesc: 'Clique em "Import New Server" para adicionar seu primeiro projeto.',
+    emptyBtn: 'Import New Server',
+    searchNotFound: 'Nenhum servidor encontrado para',
+    autoLabel: 'Auto',
+  },
+
+  // Card
+  card: {
+    online: 'Online',
+    offline: 'Offline',
+    port: 'Porta',
+    uptime: 'Ativo há',
+    local: 'Local',
+    public: 'Pública',
+    cpu: 'CPU',
+    ram: 'RAM',
+    procs: 'Processos',
+    start: 'Start',
+    stop: 'Stop',
+    changeIcon: 'Clique para mudar o ícone',
+    autoRestart: 'Reiniciar automaticamente ao alterar arquivos',
+    removeTitle: 'Remover do ServerRunner',
+    removeConfirm: 'Remover "{name}" do ServerRunner?\n(O projeto no disco não será afetado.)',
+  },
+
+  // Modal
+  modal: {
+    title: 'Add Server',
+    serverName: 'Server Name',
+    projectPath: 'Project Path',
+    entryFile: 'Entry File',
+    port: 'Port',
+    startCommand: 'Start Command',
+    uploadArea: 'Drop files here or click to upload',
+    cancel: 'Cancel',
+    save: 'Add Server',
+  },
+
+  // Settings
+  settings: {
+    title: 'Configurações',
+    subtitle: 'Preferências globais do ServerRunner',
+    windowTheme: 'Tema da Janela',
+    windowThemeDesc: 'Aparência dos botões e barra superior',
+    terminal: 'Terminal — Global',
+    terminalDesc: 'As configurações abaixo valem para todos os terminais. Cada janela de terminal pode sobrescrever individualmente ⚙️',
+    langTitle: 'Idioma',
+    langDesc: 'Idioma da interface',
+    langPt: 'Português (Brasil)',
+    langEn: 'Inglês',
+    langJa: 'Japonês',
+    themePreset: 'Tema predefinido',
+    themePresetDesc: 'Aplica um conjunto completo de cores',
+    presetCustom: 'Personalizado',
+    presetHacker: 'Hacker (verde)',
+    presetCyber: 'Cyber (ciano)',
+    presetAmber: 'Amber (âmbar)',
+    presetSnow: 'Snow (branco gelo)',
+    presetMatrix: 'Matrix (verde escuro)',
+    presetSunset: 'Sunset (laranja/rosa)',
+    presetDracula: 'Dracula (roxo/rosa)',
+    presetNord: 'Nord (azul acinzentado)',
+    fontLabel: 'Fonte',
+    fontDesc: 'Estilo da fonte',
+    sizeLabel: 'Tamanho',
+    sizeDesc: 'Tamanho do texto',
+    textColor: 'Cor do texto',
+    textColorDesc: 'Cor dos logs',
+    bgStyle: 'Estilo do fundo',
+    bgStyleDesc: 'Aparência do fundo do terminal',
+    bgSolid: 'Sólido escuro',
+    bgGlass: 'Vidro (Glass)',
+    bgAcrylic: 'Acrílico (Blur+)',
+    bgTransparent: 'Transparente puro',
+    bgGradient: 'Gradiente escuro',
+    opacity: 'Opacidade',
+    opacityDesc: 'Transparência do fundo',
+    glow: 'Brilho do fundo',
+    glowDesc: 'Intensidade do efeito de brilho',
+    prompt: 'Prompt',
+    promptDesc: 'Símbolo antes dos comandos',
+    echo: 'Ligar/Desligar',
+    echoDesc: 'Mostrar eco local dos comandos',
+    general: 'Geral',
+    minimize: 'Iniciar minimizado',
+    minimizeDesc: 'Abre o app na bandeja do sistema',
+    autoMonitor: 'Monitoramento automático',
+    autoMonitorDesc: 'Iniciar monitoramento ao abrir',
+    about: 'Sobre',
+    version: 'Versão',
+    system: 'Sistema',
+    themeAuto: 'Auto',
+    themeAutoDesc: 'Detectar SO',
+    themeWindows: 'Windows',
+    themeWindowsDesc: 'Ícones à direita',
+    themeMacos: 'macOS',
+    themeMacosDesc: 'Bolinhas à esquerda',
+    themeLinux: 'Linux',
+    themeLinuxDesc: 'Botões simplificados',
+    selectImage: 'Selecionar imagem',
+    bgImage: 'Imagem de fundo',
+    bgVideo: 'Vídeo de fundo (sem som)',
+    bgOpacity: 'Opacidade do fundo',
+    bgBrightness: 'Brilho do fundo',
+    windowBg: 'Fundo da Janela',
+    windowBgDesc: 'Efeito de fundo da aplicação',
+    windowTitlebar: 'Titlebar',
+    appTheme: 'Tema de Cor',
+    appThemeDesc: 'Esquema de cores da interface',
+  },
+
+  // Terminal
+  terminal: {
+    statusOnline: '● Online',
+    statusOffline: '● Offline',
+    closeTitle: 'Fechar',
+    minimizeTitle: 'Recuar',
+    settingsTitle: 'Configurar',
+    loading: 'Carregando...',
+  },
+
+  // Logs
+  logs: {
+    title: 'Logs do Sistema',
+    subtitle: 'Eventos e atividades do ServerRunner',
+    clearBtn: 'Limpar Logs',
+    empty: 'Nenhum log até o momento',
+  },
+
+  // Log types
+  logTypes: {
+    info: 'INFO',
+    success: 'SUCCESS',
+    warning: 'WARNING',
+    error: 'ERROR',
+  },
+
+  // About
+  about: {
+    versionLabel: 'Versão 1.1.0',
+    developer: 'Desenvolvedor',
+    devDesc: 'Criador do ServerRunner',
+    techs: 'Tecnologias',
+    license: 'Licença',
+    licenseText: 'Projeto de código aberto distribuído sob licença MIT. Sinta-se livre para usar, modificar e compartilhar.',
+  },
+
+  // Views
+  views: {
+    dashboard: 'Dashboard',
+    settings: 'Configurações',
+    logs: 'Logs',
+    about: 'Sobre',
+  },
+  sidebar: {
+    dashboard: 'Dashboard',
+    settings: 'Configurações',
+    logs: 'Logs',
+    about: 'Sobre',
+    system: 'ServerRunner',
+    cpu: 'CPU',
+    ram: 'RAM',
+    ramSystem: '💻 RAM do Sistema',
+  },
+};
