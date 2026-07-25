@@ -1,0 +1,107 @@
+/* === Logs View === */
+.logs-view {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logs-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logs-container {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+
+.logs-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  gap: 8px;
+  font-size: 14px;
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.log-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  transition: background 0.15s;
+}
+
+.log-entry:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.log-entry + .log-entry {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.log-time {
+  color: var(--text-muted);
+  font-size: 11px;
+  min-width: 70px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.log-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  min-width: 48px;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.log-badge.info {
+  background: rgba(79, 174, 255, 0.12);
+  color: var(--blue);
+}
+
+.log-badge.success {
+  background: rgba(61, 255, 156, 0.12);
+  color: var(--green);
+}
+
+.log-badge.warning {
+  background: rgba(255, 189, 46, 0.12);
+  color: #FFBD2E;
+}
+
+.log-badge.error {
+  background: rgba(255, 94, 94, 0.12);
+  color: var(--red);
+}
+
+.log-message {
+  color: var(--text-secondary);
+  flex: 1;
+  line-height: 1.5;
+}
